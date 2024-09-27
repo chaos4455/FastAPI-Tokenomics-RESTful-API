@@ -1,0 +1,15 @@
+version: 1
+disable_existing_loggers: false
+formatters:
+  simple:
+    format: '%(asctime)s - %(name)s - %(levelname)s - %(message)s'
+handlers:
+  console:
+    class: logging.StreamHandler
+    formatter: simple
+    level: DEBUG
+loggers:
+  my_app:
+    handlers: [console]
+    level: DEBUG
+    propagate: no

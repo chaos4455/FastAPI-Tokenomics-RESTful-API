@@ -1,0 +1,10 @@
+# app/config/settings.yaml
+database:
+  path: "app/db/network_database.db"
+api:
+  title: "Tokenomics Wallet Management API"
+  version: "1.0"
+  description: "API para gerenciar wallets de criptomoedas"
+logging:
+  level: "DEBUG"
+  log_file: "app/logs/app.log" # Opcional, se você quiser salvar logs em um arquivo
