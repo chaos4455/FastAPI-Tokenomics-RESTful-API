@@ -1,0 +1,19 @@
+# 🗄️ Estrutura dos Bancos de Dados
+# 📄 Detalhes dos arquivos .db encontrados na estrutura do projeto.
+# 📅 Versão: 1.0
+
+project:
+  name: Tokenomics Backend Project
+  description: Documentação dos bancos de dados encontrados na estrutura do projeto.
+  version: '1.0'
+  databases:
+  - name: consensus_network.db
+    location: tokenomics_backend\app\db\consensus_network.db
+    size_bytes: 69632
+    created: '2024-09-27T13:33:52.131308'
+    modified: '2024-09-27T13:33:53.284595'
+  - name: network_database.db
+    location: tokenomics_backend\app\db\network_database.db
+    size_bytes: 102400
+    created: '2024-09-27T15:02:33.556700'
+    modified: '2024-09-27T15:02:34.608209'

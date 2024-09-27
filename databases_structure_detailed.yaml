@@ -1,0 +1,965 @@
+# 🗄️ Estrutura Detalhada dos Bancos de Dados
+# 📄 Detalhes dos arquivos .db encontrados na estrutura do projeto.
+# 📅 Versão: 1.0
+
+project:
+  name: Tokenomics Backend Project
+  description: Documentação detalhada dos bancos de dados encontrados na estrutura
+    do projeto.
+  version: '1.0'
+  databases:
+  - name: consensus_network.db
+    location: tokenomics_backend\app\db\consensus_network.db
+    tables:
+    - table_name: mining_nodes
+      columns:
+      - column_name: id
+        data_type: INTEGER
+        not_null: false
+        default_value: null
+        primary_key: true
+      - column_name: node_name
+        data_type: TEXT
+        not_null: true
+        default_value: null
+        primary_key: false
+      - column_name: hash_rate
+        data_type: REAL
+        not_null: true
+        default_value: null
+        primary_key: false
+      - column_name: power_consumption
+        data_type: REAL
+        not_null: false
+        default_value: null
+        primary_key: false
+      - column_name: mining_algorithm
+        data_type: TEXT
+        not_null: true
+        default_value: null
+        primary_key: false
+      - column_name: status
+        data_type: TEXT
+        not_null: true
+        default_value: null
+        primary_key: false
+    - table_name: staking_pools
+      columns:
+      - column_name: id
+        data_type: INTEGER
+        not_null: false
+        default_value: null
+        primary_key: true
+      - column_name: pool_name
+        data_type: TEXT
+        not_null: true
+        default_value: null
+        primary_key: false
+      - column_name: total_staked
+        data_type: REAL
+        not_null: true
+        default_value: null
+        primary_key: false
+      - column_name: reward_rate
+        data_type: REAL
+        not_null: true
+        default_value: null
+        primary_key: false
+      - column_name: validator_count
+        data_type: INTEGER
+        not_null: false
+        default_value: null
+        primary_key: false
+      - column_name: pool_status
+        data_type: TEXT
+        not_null: true
+        default_value: null
+        primary_key: false
+    - table_name: consensus_algorithms
+      columns:
+      - column_name: id
+        data_type: INTEGER
+        not_null: false
+        default_value: null
+        primary_key: true
+      - column_name: algorithm_name
+        data_type: TEXT
+        not_null: true
+        default_value: null
+        primary_key: false
+      - column_name: type
+        data_type: TEXT
+        not_null: true
+        default_value: null
+        primary_key: false
+      - column_name: block_time
+        data_type: REAL
+        not_null: true
+        default_value: null
+        primary_key: false
+      - column_name: finality_time
+        data_type: REAL
+        not_null: true
+        default_value: null
+        primary_key: false
+      - column_name: fault_tolerance
+        data_type: REAL
+        not_null: true
+        default_value: null
+        primary_key: false
+      - column_name: description
+        data_type: TEXT
+        not_null: false
+        default_value: null
+        primary_key: false
+    - table_name: transactions
+      columns:
+      - column_name: id
+        data_type: INTEGER
+        not_null: false
+        default_value: null
+        primary_key: true
+      - column_name: sender_node_id
+        data_type: INTEGER
+        not_null: false
+        default_value: null
+        primary_key: false
+      - column_name: receiver_node_id
+        data_type: INTEGER
+        not_null: false
+        default_value: null
+        primary_key: false
+      - column_name: transaction_amount
+        data_type: REAL
+        not_null: true
+        default_value: null
+        primary_key: false
+      - column_name: consensus_algorithm_id
+        data_type: INTEGER
+        not_null: false
+        default_value: null
+        primary_key: false
+      - column_name: timestamp
+        data_type: TEXT
+        not_null: true
+        default_value: null
+        primary_key: false
+      - column_name: tx_hash
+        data_type: TEXT
+        not_null: true
+        default_value: null
+        primary_key: false
+      - column_name: status
+        data_type: TEXT
+        not_null: true
+        default_value: null
+        primary_key: false
+    - table_name: fault_tolerance_metrics
+      columns:
+      - column_name: id
+        data_type: INTEGER
+        not_null: false
+        default_value: null
+        primary_key: true
+      - column_name: node_id
+        data_type: INTEGER
+        not_null: false
+        default_value: null
+        primary_key: false
+      - column_name: fault_tolerance_score
+        data_type: REAL
+        not_null: true
+        default_value: null
+        primary_key: false
+      - column_name: downtime_percentage
+        data_type: REAL
+        not_null: true
+        default_value: null
+        primary_key: false
+      - column_name: recovery_time
+        data_type: REAL
+        not_null: false
+        default_value: null
+        primary_key: false
+    - table_name: node_responses
+      columns:
+      - column_name: id
+        data_type: INTEGER
+        not_null: false
+        default_value: null
+        primary_key: true
+      - column_name: request_id
+        data_type: INTEGER
+        not_null: false
+        default_value: null
+        primary_key: false
+      - column_name: node_id
+        data_type: INTEGER
+        not_null: false
+        default_value: null
+        primary_key: false
+      - column_name: response_time
+        data_type: REAL
+        not_null: true
+        default_value: null
+        primary_key: false
+      - column_name: status
+        data_type: TEXT
+        not_null: true
+        default_value: null
+        primary_key: false
+    - table_name: network_requests
+      columns:
+      - column_name: id
+        data_type: INTEGER
+        not_null: false
+        default_value: null
+        primary_key: true
+      - column_name: sender_node_id
+        data_type: INTEGER
+        not_null: false
+        default_value: null
+        primary_key: false
+      - column_name: request_type
+        data_type: TEXT
+        not_null: true
+        default_value: null
+        primary_key: false
+      - column_name: request_time
+        data_type: REAL
+        not_null: true
+        default_value: null
+        primary_key: false
+    - table_name: data_no_failure_scenarios
+      columns:
+      - column_name: id
+        data_type: INTEGER
+        not_null: false
+        default_value: null
+        primary_key: true
+      - column_name: node_id
+        data_type: INTEGER
+        not_null: false
+        default_value: null
+        primary_key: false
+      - column_name: scenario_description
+        data_type: TEXT
+        not_null: true
+        default_value: null
+        primary_key: false
+      - column_name: fault_tolerance_algorithm_id
+        data_type: INTEGER
+        not_null: false
+        default_value: null
+        primary_key: false
+    - table_name: data_exchange_logs
+      columns:
+      - column_name: id
+        data_type: INTEGER
+        not_null: false
+        default_value: null
+        primary_key: true
+      - column_name: sender_node_id
+        data_type: INTEGER
+        not_null: false
+        default_value: null
+        primary_key: false
+      - column_name: receiver_node_id
+        data_type: INTEGER
+        not_null: false
+        default_value: null
+        primary_key: false
+      - column_name: data_size
+        data_type: REAL
+        not_null: true
+        default_value: null
+        primary_key: false
+      - column_name: timestamp
+        data_type: TEXT
+        not_null: true
+        default_value: null
+        primary_key: false
+      - column_name: status
+        data_type: TEXT
+        not_null: true
+        default_value: null
+        primary_key: false
+    - table_name: blockchain_network_nodes
+      columns:
+      - column_name: id
+        data_type: INTEGER
+        not_null: false
+        default_value: null
+        primary_key: true
+      - column_name: node_name
+        data_type: TEXT
+        not_null: true
+        default_value: null
+        primary_key: false
+      - column_name: node_type
+        data_type: TEXT
+        not_null: true
+        default_value: null
+        primary_key: false
+      - column_name: consensus_algorithm_id
+        data_type: INTEGER
+        not_null: false
+        default_value: null
+        primary_key: false
+      - column_name: stake
+        data_type: REAL
+        not_null: false
+        default_value: null
+        primary_key: false
+      - column_name: node_status
+        data_type: TEXT
+        not_null: true
+        default_value: null
+        primary_key: false
+    - table_name: smart_contracts
+      columns:
+      - column_name: id
+        data_type: INTEGER
+        not_null: false
+        default_value: null
+        primary_key: true
+      - column_name: contract_name
+        data_type: TEXT
+        not_null: true
+        default_value: null
+        primary_key: false
+      - column_name: bytecode
+        data_type: TEXT
+        not_null: true
+        default_value: null
+        primary_key: false
+      - column_name: creator_node_id
+        data_type: INTEGER
+        not_null: false
+        default_value: null
+        primary_key: false
+      - column_name: status
+        data_type: TEXT
+        not_null: true
+        default_value: null
+        primary_key: false
+      - column_name: creation_date
+        data_type: TEXT
+        not_null: true
+        default_value: null
+        primary_key: false
+    - table_name: network_state_snapshots
+      columns:
+      - column_name: id
+        data_type: INTEGER
+        not_null: false
+        default_value: null
+        primary_key: true
+      - column_name: node_id
+        data_type: INTEGER
+        not_null: false
+        default_value: null
+        primary_key: false
+      - column_name: block_height
+        data_type: INTEGER
+        not_null: true
+        default_value: null
+        primary_key: false
+      - column_name: state_hash
+        data_type: TEXT
+        not_null: true
+        default_value: null
+        primary_key: false
+      - column_name: timestamp
+        data_type: TEXT
+        not_null: true
+        default_value: null
+        primary_key: false
+    - table_name: consensus_reports
+      columns:
+      - column_name: id
+        data_type: INTEGER
+        not_null: false
+        default_value: null
+        primary_key: true
+      - column_name: algorithm_id
+        data_type: INTEGER
+        not_null: false
+        default_value: null
+        primary_key: false
+      - column_name: total_nodes
+        data_type: INTEGER
+        not_null: false
+        default_value: null
+        primary_key: false
+      - column_name: avg_block_time
+        data_type: REAL
+        not_null: false
+        default_value: null
+        primary_key: false
+      - column_name: avg_finality_time
+        data_type: REAL
+        not_null: false
+        default_value: null
+        primary_key: false
+    size_bytes: 69632
+    created: '2024-09-27T13:33:52.131308'
+    modified: '2024-09-27T13:33:53.284595'
+  - name: network_database.db
+    location: tokenomics_backend\app\db\network_database.db
+    tables:
+    - table_name: users
+      columns:
+      - column_name: id
+        data_type: INTEGER
+        not_null: false
+        default_value: null
+        primary_key: true
+      - column_name: name
+        data_type: TEXT
+        not_null: true
+        default_value: null
+        primary_key: false
+      - column_name: email
+        data_type: TEXT
+        not_null: false
+        default_value: null
+        primary_key: false
+      - column_name: password_hash
+        data_type: TEXT
+        not_null: true
+        default_value: null
+        primary_key: false
+      - column_name: user_type
+        data_type: TEXT
+        not_null: true
+        default_value: null
+        primary_key: false
+      - column_name: creation_date
+        data_type: TEXT
+        not_null: false
+        default_value: null
+        primary_key: false
+      - column_name: country
+        data_type: TEXT
+        not_null: false
+        default_value: null
+        primary_key: false
+      - column_name: status
+        data_type: TEXT
+        not_null: false
+        default_value: null
+        primary_key: false
+    - table_name: wallets
+      columns:
+      - column_name: id
+        data_type: INTEGER
+        not_null: false
+        default_value: null
+        primary_key: true
+      - column_name: user_id
+        data_type: INTEGER
+        not_null: false
+        default_value: null
+        primary_key: false
+      - column_name: public_key
+        data_type: TEXT
+        not_null: true
+        default_value: null
+        primary_key: false
+      - column_name: private_key_hash
+        data_type: TEXT
+        not_null: true
+        default_value: null
+        primary_key: false
+      - column_name: token_balance
+        data_type: REAL
+        not_null: false
+        default_value: '0'
+        primary_key: false
+      - column_name: currency
+        data_type: TEXT
+        not_null: true
+        default_value: null
+        primary_key: false
+      - column_name: token_type
+        data_type: TEXT
+        not_null: true
+        default_value: null
+        primary_key: false
+    - table_name: tokens
+      columns:
+      - column_name: id
+        data_type: INTEGER
+        not_null: false
+        default_value: null
+        primary_key: true
+      - column_name: token_name
+        data_type: TEXT
+        not_null: true
+        default_value: null
+        primary_key: false
+      - column_name: token_symbol
+        data_type: TEXT
+        not_null: true
+        default_value: null
+        primary_key: false
+      - column_name: total_supply
+        data_type: REAL
+        not_null: true
+        default_value: null
+        primary_key: false
+      - column_name: decimal_places
+        data_type: INTEGER
+        not_null: false
+        default_value: '18'
+        primary_key: false
+      - column_name: token_type
+        data_type: TEXT
+        not_null: true
+        default_value: null
+        primary_key: false
+      - column_name: creation_date
+        data_type: TEXT
+        not_null: false
+        default_value: null
+        primary_key: false
+    - table_name: transactions
+      columns:
+      - column_name: id
+        data_type: INTEGER
+        not_null: false
+        default_value: null
+        primary_key: true
+      - column_name: sender_wallet_id
+        data_type: INTEGER
+        not_null: false
+        default_value: null
+        primary_key: false
+      - column_name: receiver_wallet_id
+        data_type: INTEGER
+        not_null: false
+        default_value: null
+        primary_key: false
+      - column_name: amount
+        data_type: REAL
+        not_null: true
+        default_value: null
+        primary_key: false
+      - column_name: token_id
+        data_type: INTEGER
+        not_null: true
+        default_value: null
+        primary_key: false
+      - column_name: timestamp
+        data_type: TEXT
+        not_null: true
+        default_value: null
+        primary_key: false
+      - column_name: tx_hash
+        data_type: TEXT
+        not_null: true
+        default_value: null
+        primary_key: false
+      - column_name: status
+        data_type: TEXT
+        not_null: true
+        default_value: null
+        primary_key: false
+    - table_name: smart_contracts
+      columns:
+      - column_name: id
+        data_type: INTEGER
+        not_null: false
+        default_value: null
+        primary_key: true
+      - column_name: contract_name
+        data_type: TEXT
+        not_null: true
+        default_value: null
+        primary_key: false
+      - column_name: bytecode
+        data_type: TEXT
+        not_null: true
+        default_value: null
+        primary_key: false
+      - column_name: creator_wallet_id
+        data_type: INTEGER
+        not_null: false
+        default_value: null
+        primary_key: false
+      - column_name: creation_date
+        data_type: TEXT
+        not_null: false
+        default_value: null
+        primary_key: false
+      - column_name: status
+        data_type: TEXT
+        not_null: true
+        default_value: null
+        primary_key: false
+    - table_name: products
+      columns:
+      - column_name: id
+        data_type: INTEGER
+        not_null: false
+        default_value: null
+        primary_key: true
+      - column_name: product_name
+        data_type: TEXT
+        not_null: true
+        default_value: null
+        primary_key: false
+      - column_name: description
+        data_type: TEXT
+        not_null: false
+        default_value: null
+        primary_key: false
+      - column_name: price
+        data_type: REAL
+        not_null: true
+        default_value: null
+        primary_key: false
+      - column_name: token_id
+        data_type: INTEGER
+        not_null: true
+        default_value: null
+        primary_key: false
+      - column_name: available_quantity
+        data_type: INTEGER
+        not_null: true
+        default_value: null
+        primary_key: false
+    - table_name: clients
+      columns:
+      - column_name: id
+        data_type: INTEGER
+        not_null: false
+        default_value: null
+        primary_key: true
+      - column_name: name
+        data_type: TEXT
+        not_null: true
+        default_value: null
+        primary_key: false
+      - column_name: email
+        data_type: TEXT
+        not_null: true
+        default_value: null
+        primary_key: false
+      - column_name: contact_number
+        data_type: TEXT
+        not_null: false
+        default_value: null
+        primary_key: false
+      - column_name: company_name
+        data_type: TEXT
+        not_null: false
+        default_value: null
+        primary_key: false
+      - column_name: client_type
+        data_type: TEXT
+        not_null: true
+        default_value: null
+        primary_key: false
+      - column_name: creation_date
+        data_type: TEXT
+        not_null: false
+        default_value: null
+        primary_key: false
+    - table_name: suppliers
+      columns:
+      - column_name: id
+        data_type: INTEGER
+        not_null: false
+        default_value: null
+        primary_key: true
+      - column_name: supplier_name
+        data_type: TEXT
+        not_null: true
+        default_value: null
+        primary_key: false
+      - column_name: email
+        data_type: TEXT
+        not_null: true
+        default_value: null
+        primary_key: false
+      - column_name: contact_number
+        data_type: TEXT
+        not_null: false
+        default_value: null
+        primary_key: false
+      - column_name: product_id
+        data_type: INTEGER
+        not_null: false
+        default_value: null
+        primary_key: false
+      - column_name: service_id
+        data_type: INTEGER
+        not_null: false
+        default_value: null
+        primary_key: false
+      - column_name: company_name
+        data_type: TEXT
+        not_null: false
+        default_value: null
+        primary_key: false
+    - table_name: orders
+      columns:
+      - column_name: id
+        data_type: INTEGER
+        not_null: false
+        default_value: null
+        primary_key: true
+      - column_name: client_id
+        data_type: INTEGER
+        not_null: false
+        default_value: null
+        primary_key: false
+      - column_name: product_id
+        data_type: INTEGER
+        not_null: false
+        default_value: null
+        primary_key: false
+      - column_name: service_id
+        data_type: INTEGER
+        not_null: false
+        default_value: null
+        primary_key: false
+      - column_name: quantity
+        data_type: INTEGER
+        not_null: false
+        default_value: null
+        primary_key: false
+      - column_name: total_price
+        data_type: REAL
+        not_null: false
+        default_value: null
+        primary_key: false
+      - column_name: order_status
+        data_type: TEXT
+        not_null: true
+        default_value: null
+        primary_key: false
+      - column_name: order_date
+        data_type: TEXT
+        not_null: true
+        default_value: null
+        primary_key: false
+    - table_name: payments
+      columns:
+      - column_name: id
+        data_type: INTEGER
+        not_null: false
+        default_value: null
+        primary_key: true
+      - column_name: order_id
+        data_type: INTEGER
+        not_null: false
+        default_value: null
+        primary_key: false
+      - column_name: wallet_id
+        data_type: INTEGER
+        not_null: false
+        default_value: null
+        primary_key: false
+      - column_name: payment_amount
+        data_type: REAL
+        not_null: true
+        default_value: null
+        primary_key: false
+      - column_name: payment_status
+        data_type: TEXT
+        not_null: true
+        default_value: null
+        primary_key: false
+      - column_name: payment_date
+        data_type: TEXT
+        not_null: true
+        default_value: null
+        primary_key: false
+    - table_name: analytics
+      columns:
+      - column_name: id
+        data_type: INTEGER
+        not_null: false
+        default_value: null
+        primary_key: true
+      - column_name: token_id
+        data_type: INTEGER
+        not_null: false
+        default_value: null
+        primary_key: false
+      - column_name: daily_volume
+        data_type: REAL
+        not_null: false
+        default_value: null
+        primary_key: false
+      - column_name: total_transactions
+        data_type: INTEGER
+        not_null: false
+        default_value: null
+        primary_key: false
+      - column_name: average_transaction_value
+        data_type: REAL
+        not_null: false
+        default_value: null
+        primary_key: false
+      - column_name: report_date
+        data_type: TEXT
+        not_null: true
+        default_value: null
+        primary_key: false
+    - table_name: network_nodes
+      columns:
+      - column_name: id
+        data_type: INTEGER
+        not_null: false
+        default_value: null
+        primary_key: true
+      - column_name: node_name
+        data_type: TEXT
+        not_null: true
+        default_value: null
+        primary_key: false
+      - column_name: ip_address
+        data_type: TEXT
+        not_null: true
+        default_value: null
+        primary_key: false
+      - column_name: public_key
+        data_type: TEXT
+        not_null: true
+        default_value: null
+        primary_key: false
+      - column_name: stake
+        data_type: REAL
+        not_null: false
+        default_value: '0'
+        primary_key: false
+      - column_name: node_status
+        data_type: TEXT
+        not_null: true
+        default_value: null
+        primary_key: false
+    - table_name: governance
+      columns:
+      - column_name: id
+        data_type: INTEGER
+        not_null: false
+        default_value: null
+        primary_key: true
+      - column_name: proposal
+        data_type: TEXT
+        not_null: true
+        default_value: null
+        primary_key: false
+      - column_name: proposal_description
+        data_type: TEXT
+        not_null: false
+        default_value: null
+        primary_key: false
+      - column_name: creation_date
+        data_type: TEXT
+        not_null: false
+        default_value: null
+        primary_key: false
+      - column_name: voting_deadline
+        data_type: TEXT
+        not_null: false
+        default_value: null
+        primary_key: false
+      - column_name: status
+        data_type: TEXT
+        not_null: true
+        default_value: null
+        primary_key: false
+    - table_name: votes
+      columns:
+      - column_name: id
+        data_type: INTEGER
+        not_null: false
+        default_value: null
+        primary_key: true
+      - column_name: proposal_id
+        data_type: INTEGER
+        not_null: false
+        default_value: null
+        primary_key: false
+      - column_name: voter_wallet_id
+        data_type: INTEGER
+        not_null: false
+        default_value: null
+        primary_key: false
+      - column_name: vote_value
+        data_type: TEXT
+        not_null: true
+        default_value: null
+        primary_key: false
+      - column_name: vote_date
+        data_type: TEXT
+        not_null: true
+        default_value: null
+        primary_key: false
+    - table_name: support_tickets
+      columns:
+      - column_name: id
+        data_type: INTEGER
+        not_null: false
+        default_value: null
+        primary_key: true
+      - column_name: user_id
+        data_type: INTEGER
+        not_null: false
+        default_value: null
+        primary_key: false
+      - column_name: issue_description
+        data_type: TEXT
+        not_null: false
+        default_value: null
+        primary_key: false
+      - column_name: issue_status
+        data_type: TEXT
+        not_null: true
+        default_value: null
+        primary_key: false
+      - column_name: submission_date
+        data_type: TEXT
+        not_null: false
+        default_value: null
+        primary_key: false
+      - column_name: resolution_date
+        data_type: TEXT
+        not_null: false
+        default_value: null
+        primary_key: false
+    - table_name: audit_logs
+      columns:
+      - column_name: id
+        data_type: INTEGER
+        not_null: false
+        default_value: null
+        primary_key: true
+      - column_name: action
+        data_type: TEXT
+        not_null: true
+        default_value: null
+        primary_key: false
+      - column_name: user_id
+        data_type: INTEGER
+        not_null: false
+        default_value: null
+        primary_key: false
+      - column_name: timestamp
+        data_type: TEXT
+        not_null: true
+        default_value: null
+        primary_key: false
+      - column_name: description
+        data_type: TEXT
+        not_null: false
+        default_value: null
+        primary_key: false
+    size_bytes: 102400
+    created: '2024-09-27T15:02:33.556700'
+    modified: '2024-09-27T15:02:34.608209'

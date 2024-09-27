@@ -1,0 +1,107 @@
+# 🚀 Estrutura do Projeto: Tokenomics Backend
+# 📝 Descrição: Documentação da estrutura de pastas e arquivos.
+# 📅 Versão: 1.0
+
+project:
+  name: Tokenomics Backend Project
+  description: Estrutura do projeto API FastAPI com foco em Tokenomics.
+  version: '1.0'
+  structure:
+    app:
+      .gitignore: null
+      app:
+        config:
+          logging.yaml: null
+      application:
+        __init__.py: null
+      background_tasks:
+        __init__.py: null
+      ci_cd:
+        pipeline.yaml: null
+      config:
+        app.py: null
+        config.py: null
+        logging.yaml: null
+        settings.yaml: null
+        __init__.py: null
+      controllers:
+        app.py: null
+        config.py: null
+        __init__.py: null
+        __pycache__:
+          app.cpython-311.pyc: null
+          __init__.cpython-311.pyc: null
+      database:
+        app.py: null
+        config.py: null
+        __init__.py: null
+      db:
+        consensus_network.db: null
+        network_database.db: null
+      docs:
+        README.md: null
+      domain:
+        __init__.py: null
+      events:
+        __init__.py: null
+      infra:
+        ansible:
+          playbook.yaml: null
+        docker:
+          Dockerfile: null
+        gitops:
+          config.yaml: null
+        kubernetes:
+          deployment.yaml: null
+        terraform:
+          main.tf: null
+      infrastructure:
+        __init__.py: null
+      main.py: null
+      middlewares:
+        app.py: null
+        config.py: null
+        __init__.py: null
+        __pycache__:
+          app.cpython-311.pyc: null
+          __init__.cpython-311.pyc: null
+      models:
+        app.py: null
+        config.py: null
+        wallet.py: null
+        __init__.py: null
+      presentation:
+        __init__.py: null
+      routes:
+        app.py: null
+        config.py: null
+        __init__.py: null
+        __pycache__:
+          app.cpython-311.pyc: null
+          __init__.cpython-311.pyc: null
+      schemas:
+        app.py: null
+        config.py: null
+        __init__.py: null
+      scripts:
+        setup.sh: null
+        start.sh: null
+      services:
+        app.py: null
+        config.py: null
+        __init__.py: null
+      tests:
+        app.py: null
+        config.py: null
+        reports: {}
+        test_api.py: null
+        __init__.py: null
+      utils:
+        app.py: null
+        config.py: null
+        __init__.py: null
+      __init__.py: null
+      __pycache__:
+        main.cpython-311.pyc: null
+        __init__.cpython-311.pyc: null
+    cria-estrutura-projeto-base-v1-fast-api-tokenomics-base-boilerplate.py: null
