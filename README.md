@@ -11,7 +11,6 @@
 > Projeto de implementação de uma API RESTful utilizando **FastAPI**, **Domain-Driven Design (DDD)** e **princípios SOLID** para uma aplicação conceito de tokenomics, integrando criptografia assimétrica e autenticação com **JWT**.
 
 ![temp_image](https://github.com/user-attachments/assets/a448764f-ba3b-4b60-b2ee-4ac168c6c2d1)
-![Code_oipUvbJEOk](https://github.com/user-attachments/assets/6d79235c-9cb0-49f5-a7e7-c1105eb6d2d4)
 ![diagram-export-27-09-2024-13_18_22](https://github.com/user-attachments/assets/b74df88a-3a1e-4cf8-b7f3-d70a52f7645d)
 ![diagram-export-27-09-2024-13_21_15](https://github.com/user-attachments/assets/e4138539-6023-4779-9490-533e05ca1389)
 ![diagram-export-27-09-2024-13_26_58](https://github.com/user-attachments/assets/5a85c211-2d0b-4915-a002-96281e318d21)
