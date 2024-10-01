@@ -1,5 +1,37 @@
 # 🚀 FastAPI-Tokenomics-RESTful-API
 
+## 📝 **Descrição do Projeto**
+
+Este projeto foi criado para consolidar meus conhecimentos em **Python** e **FastAPI**, onde venho de um background de **Flask** desde 2018 e agora estou ampliando minha stack para incluir **FastAPI**. Escolhi FastAPI devido à sua performance superior, tipagem moderna com Pydantic, e compatibilidade com sistemas assíncronos, tornando-a ideal para **microserviços** de alta escala.
+
+A API foi construída seguindo os princípios de **DDD (Domain-Driven Design)** e **SOLID**, com um foco forte em **DRY** (Don't Repeat Yourself) para garantir um código modular e sustentável.
+
+### ⚡ Por que **FastAPI**?
+
+- **Performance**: FastAPI é extremamente rápida, comparável a Node.js e Go.
+- **Tipagem**: Com Pydantic, oferece validação e parsing automático de dados.
+- **Assíncrono**: Perfeito para aplicações de grande escala e microserviços que requerem alta performance.
+- **Documentação Automática**: Suporte nativo para Swagger e Redoc.
+
+Agora minha stack de desenvolvimento de APIs inclui:
+- **Flask** e **FastAPI** no **Python**
+- **Express** no **Node.js**
+
+---
+
+## 🛠 **Tecnologias Utilizadas**
+
+- **Linguagem**: Python 3.9+
+- **Framework**: FastAPI
+- **Princípios**: SOLID, DDD, DRY
+- **Autenticação**: JWT (JSON Web Tokens)
+- **Criptografia**: Assimétrica (RSA)
+- **Banco de Dados**:
+  - **SQLAlchemy** (Rede e Blockchain)
+  - Bancos separados para dados tradicionais e tokenomics/blockchain.
+- **Integração Blockchain**: Simulações de tokenomics.
+
+
 ![Python](https://img.shields.io/badge/Python-3.9+-blue.svg)
 ![FastAPI](https://img.shields.io/badge/FastAPI-0.78.0-green.svg)
 ![SOLID](https://img.shields.io/badge/SOLID-Principles-yellow.svg)
@@ -41,36 +73,6 @@ A API foi construída seguindo os princípios de **DDD (Domain-Driven Design)** 
 
 ---
 
-## 📝 **Descrição do Projeto**
-
-Este projeto foi criado para consolidar meus conhecimentos em **Python** e **FastAPI**, onde venho de um background de **Flask** desde 2018 e agora estou ampliando minha stack para incluir **FastAPI**. Escolhi FastAPI devido à sua performance superior, tipagem moderna com Pydantic, e compatibilidade com sistemas assíncronos, tornando-a ideal para **microserviços** de alta escala.
-
-A API foi construída seguindo os princípios de **DDD (Domain-Driven Design)** e **SOLID**, com um foco forte em **DRY** (Don't Repeat Yourself) para garantir um código modular e sustentável.
-
-### ⚡ Por que **FastAPI**?
-
-- **Performance**: FastAPI é extremamente rápida, comparável a Node.js e Go.
-- **Tipagem**: Com Pydantic, oferece validação e parsing automático de dados.
-- **Assíncrono**: Perfeito para aplicações de grande escala e microserviços que requerem alta performance.
-- **Documentação Automática**: Suporte nativo para Swagger e Redoc.
-
-Agora minha stack de desenvolvimento de APIs inclui:
-- **Flask** e **FastAPI** no **Python**
-- **Express** no **Node.js**
-
----
-
-## 🛠 **Tecnologias Utilizadas**
-
-- **Linguagem**: Python 3.9+
-- **Framework**: FastAPI
-- **Princípios**: SOLID, DDD, DRY
-- **Autenticação**: JWT (JSON Web Tokens)
-- **Criptografia**: Assimétrica (RSA)
-- **Banco de Dados**:
-  - **SQLAlchemy** (Rede e Blockchain)
-  - Bancos separados para dados tradicionais e tokenomics/blockchain.
-- **Integração Blockchain**: Simulações de tokenomics.
 
 ---
 
@@ -81,7 +83,6 @@ O projeto foi desenvolvido com **Domain-Driven Design (DDD)** e é totalmente mo
 2. **Camada de Aplicação**: Serviços e handlers que coordenam as requisições.
 3. **Camada de Infraestrutura**: Integração com bancos de dados e outros serviços externos.
 
-![Estrutura DDD](link_para_imagem)
 
 ---
 
@@ -109,7 +110,6 @@ A arquitetura do banco de dados é dividida em dois segmentos:
 2. **Blockchain Tokenomics**: Simulações de transferência de tokens e contratos inteligentes, permitindo verificar integrações e visualizações futuras.
 
 Print da arquitetura do banco de dados:  
-![Print Banco de Dados](link_para_imagem)
 
 ---
 
@@ -159,7 +159,6 @@ O projeto foi desenvolvido com **Domain-Driven Design (DDD)** e é totalmente mo
 2. **Camada de Aplicação**: Serviços e handlers que coordenam as requisições.
 3. **Camada de Infraestrutura**: Integração com bancos de dados e outros serviços externos.
 
-![Estrutura DDD](link_para_imagem)
 
 ---
 
@@ -187,7 +186,6 @@ A arquitetura do banco de dados é dividida em dois segmentos:
 2. **Blockchain Tokenomics**: Simulações de transferência de tokens e contratos inteligentes, permitindo verificar integrações e visualizações futuras.
 
 Print da arquitetura do banco de dados:  
-![Print Banco de Dados](link_para_imagem)
 
 ---
 
