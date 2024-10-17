@@ -1,4 +1,4 @@
-# 🚀 FastAPI-Tokenomics-RESTful-API
+# 🚀 FastAPI-Real-State-Tokenomics-RESTful-API
 
 ## 📝 **Descrição do Projeto**
 
@@ -59,6 +59,9 @@ Este projeto foi criado para consolidar meus conhecimentos em **Python** e **Fas
 
 A API foi construída seguindo os princípios de **DDD (Domain-Driven Design)** e **SOLID**, com um foco forte em **DRY** (Don't Repeat Yourself) para garantir um código modular e sustentável.
 
+![BigChainDB-for-Blockchain](https://github.com/user-attachments/assets/566c8fe7-6c22-4ce1-a458-e22c4151882e)
+
+
 # 🚀 FastAPI-Tokenomics-RESTful-API
 
 ![Python](https://img.shields.io/badge/Python-3.9+-blue.svg)
@@ -73,6 +76,9 @@ A API foi construída seguindo os princípios de **DDD (Domain-Driven Design)** 
 
 ---
 
+![chrome_QUixJCpaK1](https://github.com/user-attachments/assets/8fb11954-52bd-49c8-b733-8d09a3516a85)
+![_193fd117-6bd2-44b3-a8f4-19fca189d85d](https://github.com/user-attachments/assets/8c1fa6cf-fdae-4389-9c0a-aaf60bae8df3)
+![_f0cebd79-d757-4034-b44b-d0dcae68ce21](https://github.com/user-attachments/assets/d3477455-f48d-4fb5-8a5c-0a2601ffcdb8)
 
 ---
 
